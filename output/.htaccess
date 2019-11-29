@@ -1,0 +1,21 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+RewriteBase /yukicom/output/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.)([A-Za-z0-9-_]+)/(.*\.(jpg|gif|png))$ /yukicom/output/$1/$1$2/$3 [L]
+RewriteRule ^(.)([A-Za-z0-9-_/\.]+)/$ /yukicom/output/$1/$1$2/index.html [L]
+RewriteRule ^(.)([A-Za-z0-9]+)$ /yukicom/output/$1/$1$2 [L]
+
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+#RewriteRule ^.*$ /yukicom/output/ [NC,L,R=301]
+
+
+</IfModule>
+#ErrorDocument 404 /index.html [L]
+# END WordPress
