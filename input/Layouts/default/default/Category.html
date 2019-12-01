@@ -1,0 +1,97 @@
+<div id="blockscontent">
+	<div class="block" id="blockd1" style="background-color:#ea2340">
+		<a class="blocktext" href="{{siteurl}}quan-gia-vay-ong-rong-soc-01/" >
+			<img class="zoom" src="{{siteurl}}images/blank.gif" />	
+			<img class="zoom" src="{{siteurl}}images/blank.gif" />	
+			<img class="zoom" src="{{siteurl}}images/blank.gif" />	
+		</a>
+	</div>
+	<div class="block" id="blockd2" style="background-color:#aa82d5">
+		<a class="blocktext" href="{{siteurl}}">
+			<img class="bounceUp" src="{{siteurl}}images/blank.gif" />	
+			<img class="bounceUp" src="{{siteurl}}images/blank.gif" />	
+			<img class="bounceUp" src="{{siteurl}}images/blank.gif" />	
+		</a>
+	</div>
+	<div class="block" id="blockd3" style="background-color:#f3be00">
+		<a class="blocktext"  href="{{siteurl}}">
+			<img class="fadedown" src="{{siteurl}}images/blank.gif" />	
+			<img class="fadedown" src="{{siteurl}}images/blank.gif" />	
+			<img class="fadedown" src="{{siteurl}}images/blank.gif" />	
+		</a>
+	</div>
+	<div class="block" id="blockd4" style="background-color:#4d2e80">
+		<a  href="{{siteurl}}quan-gia-vay-ong-rong-soc-02/">
+			<img class="flip"  src="{{siteurl}}images/blank.gif" />		
+			<img class="flip"  src="{{siteurl}}images/blank.gif" />
+			<img class="flip"  src="{{siteurl}}images/blank.gif" />	
+		</a>
+	</div>
+
+	<div class="block" id="blockd5" style="background-color:rgba(240, 248, 255, 0.7)">
+		<div id="maincontent">
+			<div id="category_title">
+				<h1 ng-bind="data.title"> </h1> 
+				<div ng-bind="data.content"> </div>
+			</div>
+			<div class="thumbnail" ng-repeat="post in data.posts">
+			    <a ng-href="siteurl+post.slug+'/'"> 
+			    	<div class="best" ng-show="post.best" style="width:90%"> </div>
+			    	<img ng-alt="post.title" ng-src="siteurl+post.slug+'/'+post.featureimage+sitesize+post.featureimagetype" /> 
+			    </a>
+			    <div class="caption"> 
+			    	<a ng-href="siteurl+post.slug+'/'">
+			    		<h2 ng-bind="post.title"> </h2>
+			    	</a>
+			        <div ng-bind="post.description"> </div>
+			        <div style="clear:both"> </div>
+			    </div>
+			</div>
+		</div>
+	 </div>
+
+
+	<div class="block" id="blockd6" style="background-color:#2e7f80">
+		<a href="{{siteurl}}">			
+			<img src="{{siteurl}}images/home.png" />	
+		</a>
+	</div>
+	<div class="block" id="blockd7" style="background-color:#4d2e80">
+		<a href="{{siteurl}}order/">			
+			<img src="{{siteurl}}images/cart.png" />	
+		</a>
+	</div>
+	<div class="block" id="blockd8" style="background-color:#db4437">
+		<a href="javascript:;" onclick="window.history.back();">			
+			<img src="{{siteurl}}images/back.png" />	
+		</a>
+	</div>
+	<div class="block" id="blockd9" style="background-color:#3b5998">
+		
+		<a href="javascript:;" onclick="$('body').scrollTop(0);">			
+			<img src="{{siteurl}}images/up.png" />	
+		</a>
+	</div>
+	
+
+	
+
+	<div class="clear"> </div>
+	<div style="display:none" id="pagetype" ng-bind="data.pagetype"> </div>
+	<div style="display:none" id="gname" ng-bind="data.gnameslug"> </div>
+	<div style="display:none" id="itemname" ng-bind="data.title"> </div>
+	<div style="display:none" id="itemslug" ng-bind="data.slug"> </div>
+
+	<div id="likecontent">
+		Hãy chia sẻ những điều mình yêu thích bạn nhé.<br /> Cảm ơn bạn!  <br />
+		<div>
+			<span class="fb-like" data-href="" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"> </span>
+			<!-- <span id="share_button" style='position: relative;cursor:pointer;z-index:14;margin-top: -3px;    margin-left: 10px;'>
+			                            <img class="noresize"  id="fbshare" ng-src="siteurl+'images/sharebt.png'" alt='chia se'/>                   
+			                        </span>    -->
+		</div>
+		<div class="fb-save" data-size="large"></div>
+  	</div>
+	
+
+</div>

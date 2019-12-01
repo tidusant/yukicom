@@ -1,0 +1,57 @@
+<amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+  <nav>
+
+
+    <ul>
+      <li>
+        <ul>
+          <li class=""><a href="{{siteurl}}">Trang chủ</a></li>
+          <li class=""><a href="{{siteurl}}contact/">Giới thiệu</a></li>
+          <li class="is-active"><a href="{{siteurl}}">Nhật ký</a></li>
+          <li><a href="{{siteurl}}contact/">Liên hệ</a></li>
+          
+      </ul>
+      </li>
+    </ul>
+
+  </nav>
+
+  
+
+
+
+</amp-sidebar>
+
+<header class="header fixed">
+  <div class="wrap">
+    <div class="container">
+      <div class="nav-container">
+         <div class="left-nav">
+            <a href="{{siteurl}}" class="tab header-title">
+              &nbsp;
+            </a>
+        </div>
+        <div class="right alt">
+
+          <a class="tab desktop " href="{{siteurl}}">
+            Trang chủ
+          </a>
+          <a class="tab desktop " href="{{siteurl}}contact/">
+            Giới thiệu
+          </a>
+          <a class="tab desktop" target="_blank" href="{{siteurl}}">
+            Nhật ký
+          </a>
+          <a class="tab desktop" target="_blank" href="{{siteurl}}contact/">
+            Liên hệ
+          </a>
+          
+
+
+          <button class="tab hamburger" id="menu-button" on='tap:sidebar.toggle'></button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

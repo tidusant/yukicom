@@ -1,0 +1,82 @@
+/*====================REsponsive=========================*/
+@media (max-width: 768px) {
+  #blockscontent {
+    line-height: 0px;
+    width: 600px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+  .block {
+    float: left;
+    width: 100px;
+    height: 100px;
+  }
+  .block img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+  }
+  .block .text {
+    font-family: Harrington;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .smallsquare {
+    width: 50px;
+    height: 50px;
+  }
+  .smallsquare div {
+    width: 50px;
+    height: 50px;
+  }
+  .smallsquare .text {
+    padding-top: 20px;
+    margin-top: 0px;
+    width: 50px;
+    height: 30px;
+    font-family: inherit;
+  }
+  .bigsquare {
+    width: 200px;
+    height: 200px;
+  }
+  .bigsquare img {
+    width: 200px;
+    height: 200px;
+  }
+  .skyboard {
+    width: 100px;
+    height: 200px;
+  }
+  .skyboard img {
+    width: 100px;
+    height: 200px;
+    position: absolute;
+  }
+  .rectangle {
+    width: 200px;
+    height: 100px;
+  }
+  .rectangle img {
+    width: 200px;
+    height: 100px;
+  }
+  .smallrectangle {
+    width: 100px;
+    height: 50px;
+  }
+  .up1sq {
+    margin-top: -100px;
+  }
+  .block .text {
+    font-family: Harrington;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 30px;
+  }
+}

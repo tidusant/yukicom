@@ -1,0 +1,33 @@
+/*====================REsponsive=========================*/
+/* ----------- iPhone 6+ ----------- */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (min-device-height: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait){ 
+    @blocksize:138px;
+	.setblocksize(@blocksize);
+    #blockscontent {
+      width: 414px;
+      margin:auto;
+    }
+    .up1sq {
+    margin-top: 0px;
+  }    
+}
+
+@media only screen 
+  and (min-device-width: 730px) 
+  and (min-device-height: 410px) 
+  and (-webkit-min-device-pixel-ratio: 3) 
+  and (orientation: landscape) { 
+    @blocksize:736px/6;
+	.setblocksize(@blocksize);
+    #blockscontent {
+      width: 736px;
+      margin:auto;
+    }
+    .up1sq {
+    margin-top: 0px;
+  }    
+}

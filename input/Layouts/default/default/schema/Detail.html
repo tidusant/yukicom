@@ -1,0 +1,17 @@
+<div class="h-entry" itemprop="article" itemscope="" itemtype="http://schema.org/Product">
+	<h1 class="p-name" itemprop="name" ng-bind="data.title"> </h1>	
+	
+	<div itemprop="brand">Colis Shop</div>	
+	<h2 class="p-summary" itemprop="description" ng-bind="data.description"> </h2>
+	<img itemprop="image" src="{{data.image}}" alt="{{data.title}}" />
+
+	<span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+	    
+	    <meta itemprop="priceCurrency" content="VND" />
+	    <span itemprop="price" ng-bind="data.price"> </span>
+	    <time itemprop="priceValidUntil" datetime="2020-11-05"> </time>	  
+	    <link itemprop="availability" href="http://schema.org/InStock" />
+	  </span>
+
+
+</div>

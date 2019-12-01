@@ -1,0 +1,15 @@
+<div>
+	<section ng-repeat="post in data.posts">
+		<div id="title">
+			<a ng-href="siteurl+post.slug+'/'" ng-title="post.title"><h1 ng-bind="post.title"> </h1></a>
+		</div>
+		<div id="text">
+			<a ng-href="siteurl+post.slug+'/'" ng-title="post.title">
+				<img ng-src="siteurl+post.slug+'/'+post.featureimage+'[[sitesize.home]]'+post.featureimagetype" ng-alt="post.title" class="itemimage"/>
+			</a>
+			<span ng-bind="post.description"> </span>
+		</div>
+		<div class="clear"> </div>
+		<div style="height:60px"> </div>
+	</section>
+</div>

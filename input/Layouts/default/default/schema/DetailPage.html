@@ -1,0 +1,35 @@
+<article class="h-entry" itemprop="article" itemscope="" itemtype="http://schema.org/Article">
+	<h1 class="p-name" itemprop="name" ng-bind="data.title"> </h1>	
+	<div itemprop="headline" ng-bind="data.title"> </div>	
+	<h2 class="p-summary" itemprop="description" ng-bind="data.description"> </h2>
+	<div itemprop="author" ng-show="data.authorname">
+		<div itemscope="" itemtype="http://schema.org/Person">
+			<a itemprop="name" class="p-author h-card" href="{{data.authorlink}}">{{data.authorname}}</a>
+		</div>
+	</div>
+
+
+
+    <div itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization">
+	    <div itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject">
+	      <img src="{{siteurl}}images/logo.jpg"/>
+	      <meta itemprop="url" content="{{siteurl}}images/logo.jpg" />
+	      <meta itemprop="width" content="1024" />
+	      <meta itemprop="height" content="1024" />
+	    </div>
+	    <meta itemprop="name" content="Colis Shop" />
+	    <meta itemprop="url" content="https://plus.google.com/112597347192269128277" />
+	  </div>
+
+
+
+    <meta itemprop="thumbnailUrl" content="{{data.thumb}}" />
+    <div itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+	  <meta content="{{data.image}}" itemprop="url" />
+	  <meta content="{{data.imagewidth}}" itemprop="width" />
+	  <meta content="{{data.imageheight}}" itemprop="height" />
+	</div>
+	<a  class="u-url u-uid" itemscope="" itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemId="{{siteurl}}{{data.slug}}/" href="{{siteurl}}{{data.slug}}/">Link</a>
+	<meta class="dt-published" itemprop="datePublished" content="{{data.datePublished}}" />
+	<meta class="dt-updated" itemprop="dateModified" content="{{data.dateModified}}" />
+</article>

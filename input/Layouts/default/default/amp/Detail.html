@@ -1,0 +1,59 @@
+<section>
+	<div id="title">
+		<h1 ng-bind="data.title"> </h1>
+	</div>
+	
+	<br />
+	<div id="text" ng-bind="data.content"> </div>
+	<br /><br />
+	
+	<div ng-show="data.tag">
+		Tag: <h3 style="font-size: 14px;display: inline;" ng-bind="data.tag">{{content.tag}}</h3><br />
+	</div>
+	<br />
+	<amp-social-share type="facebook" data-param-app_id="1441861002757240"> </amp-social-share>
+	<amp-social-share type="gplus" data-param-app_id="1441861002757240"> </amp-social-share>
+	<br /> <br />
+	<div class="clear"> </div>
+	<strong>Các bài viết khác:</strong>
+	<br /> <br />
+	<div class="relatetext" ng-repeat="post in data.relateposts">
+		<a ng-title='post.title'  ng-href="siteurl+post.slug+'-'+post.amp+'/'"> <h3 ng-bind="'&hearts;'+post.title"> </h3> </a> <br />
+	</div>
+
+	<script type="application/ld+json">
+	{
+	  "@context": "http://schema.org",
+	  "@type": "NewsArticle",
+	  "mainEntityOfPage": {
+	    "@type": "WebPage",
+	    "@id": "{{siteurl+post.slug}}/"
+	  },
+	  "headline": "{{data.title}}",
+	  "image": {
+	    "@type": "ImageObject",
+	    "url": "{{data.image}}",
+	    "height": "{{data.imageheight}}",
+	    "width": "{{data.imagewidth}}"
+	  },
+	  "datePublished": "{{data.datePublished}}",
+	  "dateModified": "{{data.dateModified}}",
+	  "author": {
+	    "@type": "Person",
+	    "name": "Nhật Ký Cha Mẹ"
+	  },
+	   "publisher": {
+	    "@type": "Organization",
+	    "name": "Nhật Ký Cha Mẹ",
+	    "logo": {
+	      "@type": "ImageObject",
+	      "url": "{{siteurl}}images/logoico.png",
+	      "width": "258",
+	      "height": "258"
+	    }
+	  },
+	  "description": "{{data.description}}"
+	}
+	</script>
+
+</section>

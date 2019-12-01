@@ -1,0 +1,10 @@
+<div>
+	<div id="title">
+		<h2>Có thể bạn quan tâm:</h2>
+	</div>
+	<div class="relatetext" ng-repeat="post in data.posts">
+		<a ng-title="post.title"  ng-href="siteurl+post.slug+'/'"><img ngalt="post.title" ng-src="siteurl+post.slug+'/'+post.featureimage+'[[sitesize.relate]]'+post.featureimagetype" /><h3 ng-bind="post.title"> </h3> </a>
+	</div>
+	<div class="clear"> </div>
+	<div style="height:60px"> </div>
+</div>

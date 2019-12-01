@@ -1,0 +1,14 @@
+<div>
+<article ng-repeat="post in data.posts" article="" itemscope="" itemtype="http://schema.org/Article">
+				<div ng-show="post.title" style="margin-bottom:50px">
+					<a ng-href="siteurl+post.slug + '/'">					
+					<h2 ng-bind="post.title" itemprop="name"> </h2>
+					</a>
+					<div style="clear:both"> </div>
+					<h3 ng-bind="post.description"> </h3>
+					<nav>
+						<a ng-href="siteurl+post.slug + '/'" class="btn btn-primary">Chi tiết</a>
+					</nav>
+			  	</div>
+</article>
+</div>

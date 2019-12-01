@@ -1,0 +1,18 @@
+<div>
+<div id="other_header"></div>
+<div id="other_content">
+	<div id="innercontent">
+		<div ng-repeat="post in data.posts">
+			<a ng-href="siteurl+post.slug+'/'" ng-title="post.title">
+			<img ng-alt="post.title" ng-src="siteurl+post.slug+'/'+post.featureimage+sitesize+post.featureimagetype" />
+			<h2 ng-bind="post.title"></h2>
+			</a>
+			<div class="clear"></div>
+			<br /><br />
+
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<div id="other_footer"></div>
+</div>

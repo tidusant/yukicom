@@ -1,0 +1,665 @@
+
+
+*{
+  margin:0;
+  padding:0;
+}
+
+
+body{
+background-color: #ea2340;
+color:#000;
+font-family: Arial,Helvetica,sans-serif;
+font-size:14px;
+  line-height: 21px;
+overflow:hidden;
+}
+@font-face {
+    font-family: "Harrington";
+    src: url({{siteurl}}fonts/harngton.ttf) format("truetype");
+}
+.clear{
+  clear:both;
+}
+.block {
+      float:left;
+    z-index:2;
+}
+.block .text{ 
+      font-family: Harrington;
+    
+      text-align: center;
+     
+     display:table-cell;
+    vertical-align: middle;
+  }
+.block img{     
+      position:absolute;
+  }
+#blockscontent{
+  line-height: 0px;
+  width: auto;
+  margin:auto;
+  overflow:hidden;
+  }
+/*============== carts ==============*/
+
+.button {
+  border: none;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.buttonG {
+  background-color: #4CAF50;
+  color: white;
+}
+/* Green */
+.buttonB {
+  background-color: #008CBA;
+  color: white;
+}
+/* Blue */
+.buttonR {
+  background-color: #f44336;
+  color: white;
+}
+/* Red */
+.buttonGr {
+  background-color: #e7e7e7;
+  color: black;
+}
+/* Gray */
+.buttonBl {
+  background-color: #555555;
+  color: white;
+}
+/* Black */
+.buttonW {
+  background-color: white;
+  color: black;
+}
+/* white */
+.buttonT {
+  background-color: transparent;
+  padding: 10px 0px;
+}
+/* transparewnt */
+#carts .itemprice{
+  text-align:right;
+}
+#carts .itemname,
+#carts .itemtotal {
+  text-align: left;
+}
+#carts .itemprice #btnincrease {
+  margin-left: 0px;
+}
+#carts #carttitle{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding:20px;
+ background-color:#c4a99e;
+}
+#carts #carterror{
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding:20px;
+ background-color:white;
+  color:red;
+}
+#carts #totalcontent {
+  padding:20px;
+ background-color:#94c196;
+}
+#carts .total {
+  text-align: right;
+  margin-right: 10px;      
+}
+#carts #total {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1100f5;
+}
+#carts .itemname a,#carts .itemname a:hover,#carts .itemname a:visited{
+  text-decoration:none;
+  font-weight:bold;
+}
+#cart_buttons{
+  text-align: center;
+}
+
+/*============== cats ==============*/
+#category_title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#category_title h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.thumbnail {
+  background-color: #f9b6b6;
+  border: 1px solid #da0423;
+  padding: 12px;
+  -webkit-box-shadow: 0px 0px 13px 3px rgba(83, 142, 155, 0.5);
+  -moz-box-shadow: 0px 0px 13px 3px rgba(83, 142, 155, 0.5);
+  box-shadow: 0px 0px 13px 3px rgba(83, 142, 155, 0.5);
+  display: block;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  -webkit-box-shadow: 0px 0px 3px 5px #f2e1f2;
+  -moz-box-shadow: 0px 0px 3px 5px #f2e1f2;
+  box-shadow: 0px 0px 3px 5px #f2e1f2;
+  border: 1px solid #f2e1f2;
+}
+.thumbnail .caption a {
+  text-decoration: none;
+  color: #3b5998;
+}
+/*============== detail ==============*/
+#blockd5 h1{
+  line-height:33px;
+}
+#blockd5 #maincontent{
+  padding:2px;
+}
+.btnaddcart{
+  background: #1fba04 none repeat scroll 0 0;
+    border-color: #2dbe60;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: rgba(255, 255, 255, 1);
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    transition: color 0.2s linear 0s, background 0.2s linear 0s, border-color 0.2s linear 0s, text-shadow 0.2s linear 0s;
+  -webkit-transition: color 0.2s linear 0s, background 0.2s linear 0s, border-color 0.2s linear 0s, text-shadow 0.2s linear 0s;
+  -o-transition: color 0.2s linear 0s, background 0.2s linear 0s, border-color 0.2s linear 0s, text-shadow 0.2s linear 0s;
+  -moz-transition: color 0.2s linear 0s, background 0.2s linear 0s, border-color 0.2s linear 0s, text-shadow 0.2s linear 0s;
+}
+.btnaddcart:hover{
+  text-decoration: none;
+    background: #6ee003 none repeat scroll 0 0;
+}
+.carttotalprice {
+  float: right;
+  width: 140px;
+  font-weight: bold;
+}
+
+.best{
+    background: url(/images/best.png) right 0px no-repeat;
+    z-index: 1;
+    width: 85%;
+    height: 139px;
+    position: absolute;
+}
+/*============== block size ==============*/
+.setblocksize(@block-size){
+  /*
+  .block {
+    
+      width: @block-size;
+      height:@block-size; 
+   
+
+  }
+  .block img{
+      width: @block-size;
+      height:@block-size; 
+      
+  }
+  .block .text{ 
+     
+      font-size: 30px;
+      line-height: 30px;
+     
+      width: @block-size;
+      height:@block-size; 
+   
+  }
+
+  .smallsquare{
+      width: @block-size/2;
+      height:@block-size/2;   
+  }
+  .smallsquare div{
+      width: @block-size/2;
+      height:@block-size/2;   
+  }
+  .smallsquare .text{
+      
+    margin-top:0px;
+      width: @block-size/2;
+      height:@block-size/2;  
+
+    font-family:inherit;
+  }
+
+  .bigsquare{
+      width: @block-size*2;
+      height:@block-size*2;
+  }
+
+  .bigsquare img{
+      width: @block-size*2;
+      height:@block-size*2; 
+  }
+
+  .skyboard{
+      width: @block-size;
+      height:@block-size*2;
+  }
+  .skyboard img{
+      width: @block-size;
+      height:@block-size*2;
+    position:absolute;
+  }
+
+  .rectangle{
+      width: @block-size*2;
+      height:@block-size;
+  }
+  .rectangle img{
+      width: @block-size*2;
+      height:@block-size;
+  }
+
+  .smallrectangle{
+      width: @block-size;
+      height:@block-size/2;
+  }
+ */
+}
+.setblocksize(120px);
+
+
+/*============================*/
+
+a.blocktext,a.blocktext:hover, a.blocktext:visited{
+  text-decoration: none;
+  color: #fff;
+
+
+}
+
+
+#likecontent{
+  display:none;
+  text-align:center;
+  font-size:18px; 
+  
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+
+.fblikebutton{
+  width:100%;
+  overflow: hidden;
+}
+/*=====================banner*/
+.banner_from_outside iframe{
+  height:250px;border:none;margin-top:15px;
+}
+
+/*=====================custom google search box*/
+.cse .gsc-control-cse, .gsc-control-cse{
+  background: transparent !important;
+  border:none !important;
+}
+/*.gsc-input input{
+  background: none !important;
+}*/
+#gcse{
+  margin-top:-12px;
+}
+
+/* keyframe animation */
+.keyframes(@classname;@name;@type;@actiontime;@showtime;@skiptime;@delaytime;@totalitem) {
+  .keyframeloop (@classname;@name;@type;@actiontime;@showtime;@skiptime;@delaytime;@totalitem);  
+}
+
+.keyframeloop (@classname;@name;@type;@actiontime;@showtime;@skiptime;@delaytime;@totalitem;@i:0) when (@i <@totalitem) {
+  @framename: e(%("%s%d",@name,@i+1));
+  @duration: (@actiontime*2 + @showtime - @skiptime)*@totalitem;
+  @-moz-keyframes @framename {
+    .keyframetimeflip(~"-moz-";@type;@actiontime;@showtime;@skiptime;@totalitem;@i);
+    .keyframetimebounceUp(~"-moz-";@type;@actiontime;@showtime;@skiptime;@totalitem;@i);
+  }  
+  @-webkit-keyframes @framename {
+    .keyframetimeflip(~"-webkit-";@type;@actiontime;@showtime;@skiptime;@totalitem;@i);
+    .keyframetimebounceUp(~"-webkit-";@type;@actiontime;@showtime;@skiptime;@totalitem;@i);
+  }
+  @keyframes @framename{
+    .keyframetimeflip("";@type;@actiontime;@showtime;@skiptime;@totalitem;@i);
+    .keyframetimebounceUp("";@type;@actiontime;@showtime;@skiptime;@totalitem;@i);
+  }
+  .setkeyframe(@classname,@name,@duration,@skiptime,@delaytime,@i+1);
+  .keyframeloop(@classname;@name;@type;@actiontime;@showtime;@skiptime;@delaytime;@totalitem;@i + 1);
+}
+
+
+.ifmswebkit (@condition, @property, @value) when (@condition = ""){
+     @{property}: @value;
+ }
+
+.setkeyframe(@classname;@keyframename;@totaltime;@skiptime;@delaytime;@curItem){  
+  @{classname}:nth-child(@{curItem}) {
+    -webkit-backface-visibility: visible !important;
+    -ms-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: e(%("%s%d",@keyframename,@curItem));
+    animation-name:e(%("%s%d",@keyframename,@curItem));
+    .setDelayFirst(@curItem,@delaytime,@skiptime);
+    .setDelayNotFirst(@curItem,@delaytime,@skiptime);
+  
+    -webkit-animation-duration: e(%("%ds",@totaltime));
+    animation-duration: e(%("%ds",@totaltime));
+    animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+}
+.setDelayFirst(@condition, @delaytime, @skiptime) when (@condition = 1){
+    -webkit-animation-delay: e(%("%ds",@delaytime - @skiptime));
+    animation-delay: e(%("%ds",@delaytime - @skiptime));
+ }
+.setDelayNotFirst(@condition, @delaytime, @skiptime) when (@condition > 1){
+    -webkit-animation-delay: e(%("%ds",@delaytime));
+    animation-delay: e(%("%ds",@delaytime));
+ }
+/* animation === FLIP === */
+.keyframetimeflip(@webkit;@type;@actiontime;@showtime;@skiptime;@totalitem;@curItem) when (@type=flip){  
+ @totalActionTime: @actiontime*2 + @showtime;
+  @totalTime: (@totalActionTime  - @skiptime)*@totalitem;
+  
+  @flipInStart: max((@curItem*(@totalActionTime - @skiptime) - @skiptime)/@totalTime*100 + 0%,0%);
+  @flipInStart1: @flipInStart+0.0001%;
+  @flipInEnd: @flipInStart+(@actiontime/@totalTime*100);
+  @flipInTotal: @flipInEnd - @flipInStart;
+  @flipIn1: @flipInStart + @flipInTotal/10*3;
+  @flipIn2: @flipInStart + @flipInTotal/10*7;
+  
+  @flipOutStart: @flipInStart+(@actiontime + @showtime)/@totalTime*100+0%;
+  @flipOutEnd: @flipOutStart+(@actiontime/@totalTime*100);
+  @flipOutTotal: @flipOutEnd - @flipOutStart;
+  @flipOut1: @flipOutStart + @flipOutTotal/10*3;
+  @flipOut2: @flipOutEnd - 0.0001%;
+  @webkittransform: e(%("%stransform",@webkit));
+  0%{
+    opacity: 0;
+  }
+  @{flipInStart}{
+    @{webkittransform}: perspective(400px) rotateY(0deg);
+    .ifmswebkit(@webkit,  -ms-transform, perspective(400px) rotateY(0deg));
+     opacity: 0;
+  }
+  @{flipInStart1}{
+    @{webkittransform}: perspective(400px) rotateY(90deg);
+    .ifmswebkit(@webkit,  -ms-transform, perspective(400px) rotateY(90deg));
+     opacity: 1;
+  }
+  @{flipIn1}{
+     @{webkittransform}: perspective(400px) rotateY(-10deg);
+    .ifmswebkit(@webkit,  -ms-transform, perspective(400px) rotateY(-10deg));
+   }
+  @{flipIn2}{
+    @{webkittransform}: perspective(400px) rotateY(10deg);
+    .ifmswebkit(@webkit,  -ms-transform, perspective(400px) rotateY(10deg));
+   }
+  @{flipInEnd}{
+    @{webkittransform}: perspective(400px) rotateY(0deg);
+    .ifmswebkit(@webkit,  -ms-transform, perspective(400px) rotateY(0deg));
+    opacity: 1;
+   }
+  
+  @{flipOutStart}{
+     @{webkittransform}: perspective(400px) rotateY(0deg);
+    .ifmswebkit(@webkit,  -ms-transform, perspective(400px) rotateY(0deg));
+  }
+  @{flipOut1}{
+     @{webkittransform}: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    .ifmswebkit(@webkit,  -ms-transform, perspective(400px) rotate3d(0, 1, 0, -15deg));
+   }
+  @{flipOut2}{    
+    @{webkittransform}: perspective(400px) rotateY(90deg);  
+    .ifmswebkit(@webkit,  -ms-transform, perspective(400px) rotateY(90deg));
+    opacity: 1;
+   }
+  @{flipOutEnd}{
+    @{webkittransform}: perspective(400px) rotateY(0deg);  
+    .ifmswebkit(@webkit,  -ms-transform, perspective(400px) rotateY(0deg));
+    opacity: 0;
+   }
+  100%{
+    opacity: 0;
+  }
+}
+
+/* animation === bounceUp === */
+.keyframetimebounceUp(@webkit;@type;@actiontime;@showtime;@skiptime;@totalitem;@curItem) when (@type=bounceUp){  
+  @totalActionTime: @actiontime*2 + @showtime;
+  @totalTime: (@totalActionTime  - @skiptime)*@totalitem;
+  
+  @flipInStart: max((@curItem*(@totalActionTime - @skiptime) - @skiptime)/@totalTime*100 + 0%,0%);
+  @flipInStart1: @flipInStart+0.0001%;
+  @flipInEnd: @flipInStart+(@actiontime/@totalTime*100);
+  @flipInTotal: @flipInEnd - @flipInStart;
+  @flipIn1: @flipInStart + @flipInTotal/10*6;
+  @flipIn2: @flipInStart + @flipInTotal/10*8;
+  
+  @flipOutStart: @flipInStart+(@actiontime+@showtime)/@totalTime*100+0%;
+  @flipOutEnd: @flipOutStart+(@actiontime/@totalTime*100);
+  @flipOutTotal: @flipOutEnd - @flipOutStart;
+  @flipOut1: @flipOutStart + @flipOutTotal/10*2;
+  @flipOut2: @flipOutEnd - 0.0001%;
+  @webkittransform: e(%("%stransform",@webkit));
+  0%{
+    opacity: 0;
+  }
+  @{flipInStart}{
+    @{webkittransform}: translateY(0px);
+    .ifmswebkit(@webkit,  -ms-transform, translateY(0px));
+     opacity: 0;
+  }
+  @{flipInStart1}{
+    @{webkittransform}: translateY(2000px);
+    .ifmswebkit(@webkit,  -ms-transform, translateY(2000px));
+     opacity: 1;
+  }
+  @{flipIn1}{
+     @{webkittransform}: translateY(-30px);
+    .ifmswebkit(@webkit,  -ms-transform, translateY(-30px));
+   }
+  @{flipIn2}{
+    @{webkittransform}: translateY(10px);
+    .ifmswebkit(@webkit,  -ms-transform, translateY(10px));
+   }
+  @{flipInEnd}{
+    @{webkittransform}: translateY(0px);
+    .ifmswebkit(@webkit,  -ms-transform, translateY(0px));
+    opacity: 1;
+   }
+  
+  @{flipOutStart}{
+     @{webkittransform}: translateY(0px);
+    .ifmswebkit(@webkit,  -ms-transform, translateY(0px));
+  }
+  @{flipOut1}{
+     @{webkittransform}: translateY(20px);;
+    .ifmswebkit(@webkit,  -ms-transform, translateY(20px));
+   }
+  @{flipOut2}{    
+    @{webkittransform}: translateY(-2000px);  
+    .ifmswebkit(@webkit,  -ms-transform, translateY(-2000px));
+    opacity: 1;
+   }
+  @{flipOutEnd}{
+    @{webkittransform}: translateY(-2000px);  
+    .ifmswebkit(@webkit,  -ms-transform, translateY(-2000px));
+    opacity: 0;
+   }
+  100%{
+    opacity: 0;
+  }
+}
+
+/* animation === fadein down === */
+.keyframetimebounceUp(@webkit;@type;@actiontime;@showtime;@skiptime;@totalitem;@curItem) when (@type=fadedown){  
+  @totalActionTime: @actiontime*2 + @showtime;
+  @totalTime: (@totalActionTime  - @skiptime)*@totalitem;
+  
+  @flipInStart: max((@curItem*(@totalActionTime - @skiptime) - @skiptime)/@totalTime*100 + 0%,0%);
+  @flipInStart1: @flipInStart+0.0001%;
+  @flipInEnd: @flipInStart+(@actiontime/@totalTime*100);
+  @flipInTotal: @flipInEnd - @flipInStart;
+  @flipIn1: @flipInStart + @flipInTotal/10*6;
+  @flipIn2: @flipInStart + @flipInTotal/10*8;
+  
+  @flipOutStart: @flipInStart+(@actiontime+@showtime)/@totalTime*100+0%;
+  @flipOutEnd: @flipOutStart+(@actiontime/@totalTime*100);
+  @flipOutTotal: @flipOutEnd - @flipOutStart;
+  @flipOut1: @flipOutStart + @flipOutTotal/10*2;
+  @flipOut2: @flipOutEnd - 0.0001%;
+  @webkittransform: e(%("%stransform",@webkit));
+  0%{
+    opacity: 0;
+  }
+  @{flipInStart}{
+    @{webkittransform}: translateY(0px);
+    .ifmswebkit(@webkit,  -ms-transform, translateY(0px));
+     opacity: 0;
+  }
+  @{flipInStart1}{
+    @{webkittransform}: translateY(-20px);
+    .ifmswebkit(@webkit,  -ms-transform, translateY(-20px));
+     opacity: 0;
+  }
+ 
+  @{flipInEnd}{
+    @{webkittransform}: translateY(0px);
+    .ifmswebkit(@webkit,  -ms-transform, translateY(0px));
+    opacity: 1;
+   }
+  
+  @{flipOutStart}{
+     @{webkittransform}: translateY(0px);
+    .ifmswebkit(@webkit,  -ms-transform, translateY(0px));
+    opacity: 1;
+  }
+  
+ 
+  @{flipOut2}{    
+    @{webkittransform}: translateY(20px);  
+    .ifmswebkit(@webkit,  -ms-transform, translateY(20px));
+    opacity: 0;
+   }
+  
+  @{flipOutEnd}{    
+     @{webkittransform}: translateY(0px);
+    .ifmswebkit(@webkit,  -ms-transform, translateY(0px));
+    opacity: 0;
+   }
+ 
+  100%{
+   
+    opacity: 0;
+  }
+}
+
+/* animation === zoom === */
+.keyframetimebounceUp(@webkit;@type;@actiontime;@showtime;@skiptime;@totalitem;@curItem) when (@type=zoom){  
+  @totalActionTime: @actiontime*2 + @showtime;
+  @totalTime: (@totalActionTime  - @skiptime)*@totalitem;
+  
+  @flipInStart: max((@curItem*(@totalActionTime - @skiptime) - @skiptime)/@totalTime*100 + 0%,0%);
+  @flipInStart1: @flipInStart+0.0001%;
+  @flipInEnd: @flipInStart+(@actiontime/@totalTime*100);
+  @flipInTotal: @flipInEnd - @flipInStart;
+  @flipIn1: @flipInStart + @flipInTotal/10*6;
+  @flipIn2: @flipInStart + @flipInTotal/10*8;
+  
+  @flipOutStart: @flipInStart+(@actiontime+@showtime)/@totalTime*100+0%;
+  @flipOutEnd: @flipOutStart+(@actiontime/@totalTime*100);
+  @flipOutTotal: @flipOutEnd - @flipOutStart;
+  @flipOut1: @flipOutStart + @flipOutTotal/10*2;
+  @flipOut2: @flipOutEnd - 0.0001%;
+  @webkittransform: e(%("%stransform",@webkit));
+  0%{
+    opacity: 0;
+  }
+  @{flipInStart}{  
+    @{webkittransform}: scale(1);  
+    .ifmswebkit(@webkit,  -ms-transform, scale(1));
+     opacity: 0;
+  }
+  @{flipInStart1}{
+    @{webkittransform}: scale(.3);
+    .ifmswebkit(@webkit,  -ms-transform, scale(.3));
+     opacity: 0;
+  }
+ 
+  @{flipInEnd}{ 
+    @{webkittransform}: scale(1);
+    .ifmswebkit(@webkit,  -ms-transform, scale(1));
+    opacity: 1;
+   }
+  
+  @{flipOutStart}{
+     @{webkittransform}: scale(1);
+    .ifmswebkit(@webkit,  -ms-transform, scale(1));
+    opacity: 1;
+  }
+  
+   @{flipOut1}{    
+    @{webkittransform}: scale(.3);  
+    .ifmswebkit(@webkit,  -ms-transform, scale(.3));
+    opacity: 0;
+   }  
+ 
+  
+  @{flipOutEnd}{    
+    @{webkittransform}: scale(1);  
+    .ifmswebkit(@webkit,  -ms-transform, scale(1));
+    opacity: 0;
+   }
+ 
+  100%{
+    opacity: 0;
+  }
+}
+/*@classname;@name;@type;@actiontime;@showtime;@skiptime;@delaytime;@totalitem */
+.keyframes(~".block .flip";flip;flip;1;4;0;0;3);
+.keyframes(~".block .bounceUp";bounceUp;bounceUp;1;5;1;1;3);
+.keyframes(~".block .fadedown";fadedown;fadedown;1;4;1;0;3);
+.keyframes(~".block .zoom";zoom;zoom;1;3;1;0;3);
